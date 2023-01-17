@@ -1,0 +1,20 @@
+---
+stylesheets:
+- ./styles/index.css
+---
+{{#extend "base"}}
+{{#content "main"}}
+<main>
+    <nav>
+        <ul>
+            <li><a href="./register.hbs">register</a></li>
+            <li><a href="./login.hbs">login</a></li>
+            <li><a href="./profile.hbs">profile</a></li>
+            <li><a href="./chats.hbs">chats</a></li>
+            <li><a href="./error500.hbs">error 500</a></li>
+            <li><a href="./error404.hbs">error 404</a></li>
+        </ul>
+    </nav>
+</main>
+{{/content}}
+{{/extend}}
