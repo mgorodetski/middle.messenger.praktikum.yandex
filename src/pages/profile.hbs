@@ -1,0 +1,55 @@
+---
+stylesheets:
+- ./styles/profile.css
+- ../components/styles/button.css
+---
+{{#extend "base"}}
+{{#content "main"}}
+<main>
+    <div class="profile__container">
+        <div class="change-avatar__out">
+            <div class="change-avatar__in">
+                <p class="change-avatar__text">change<br>avatar</p>
+            </div>
+        </div>
+        <div class="profile-data">
+            <span class="profile-data__label">e-mail</span>
+            <span class="profile-data__value">mgorodetsky@yandex.ru</span>
+        </div>
+
+        <div class="profile-data">
+            <span class="profile-data__label">login</span>
+            <span class="profile-data__value">mgoro</span>
+        </div>
+
+        <div class="profile-data">
+            <span class="profile-data__label">name</span>
+            <span class="profile-data__value">Mikhail</span>
+        </div>
+
+        <div class="profile-data">
+            <span class="profile-data__label">surname</span>
+            <span class="profile-data__value">Gorodetsky</span>
+        </div>
+
+        <div class="profile-data">
+            <span class="profile-data__label">nickname</span>
+            <span class="profile-data__value">mgoro</span>
+        </div>
+
+        <div class="profile-data">
+            <span class="profile-data__label">phone</span>
+            <span class="profile-data__value">+7 (123) 456 78 90</span>
+        </div>
+        <div class="profile-actions">
+            <div class="form-buttons visually-hidden">
+                {{> button text="save"}}
+            </div>
+            <p><a href="register.hbs">edit profile</a></p>
+            <p><a href="changePass.hbs">change password</a></p>
+            <p><a href="index.hbs">logout</a></p>
+        </div>
+    </div>
+</main>
+{{/content}}
+{{/extend}}

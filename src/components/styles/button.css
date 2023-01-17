@@ -1,0 +1,21 @@
+.custom-button {
+    width: 280px;
+    background-color: var(--blue-1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.custom-button:hover {
+    background-color: var(--blue-2);
+}
+
+.custom-button:active {
+    transform: scale(0.98);
+    background-color: tomato;
+}

@@ -1,0 +1,15 @@
+---
+stylesheets:
+- ./styles/errors.css
+---
+{{#extend "base"}}
+    {{#content "main"}}
+        <main>
+            <div class="container__errors">
+                <h2 class="error__code">404</h2>
+                <h3 class="error__text">it looks there's nothing here</h3>
+                <a href="chats.hbs">< go back to chats</a>
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}
