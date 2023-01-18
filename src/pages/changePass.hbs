@@ -14,13 +14,15 @@ stylesheets:
                 <p class="change-avatar__text">change<br>avatar</p>
             </div>
         </div>
-        {{> input type="password" name="password" placeholder=" oldPassword" required=true}}
-        {{> input type="password" name="password" placeholder="newPassword" required=true}}
-        {{> input type="password" name="password_confirm" placeholder="confirm_new_password" required=true}}
+        <form class="form__login">
+            {{> input type="password" name="password" placeholder=" oldPassword" required=true}}
+            {{> input type="password" name="password" placeholder="newPassword" required=true}}
+            {{> input type="password" name="password_confirm" placeholder="confirm_new_password" required=true}}
 
-        <div class="form__buttons">
-            {{> button text="save"}}
-        </div>
+            <div class="form__buttons">
+                {{> button text="save"}}
+            </div>
+        </form>
     </div>
     </div>
 </main>

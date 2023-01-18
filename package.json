@@ -34,6 +34,9 @@
   },
   "author": "Mikhail Gorodetski",
   "license": "ISC",
+  "engines": {
+    "node": ">=12"
+  },
   "bugs": {
     "url": "https://github.com/mgorodetski/middle.messenger.praktikum.yandex/issues"
   },
