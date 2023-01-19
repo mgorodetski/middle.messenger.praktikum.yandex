@@ -1,0 +1,28 @@
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--blue-1);
+  font-size: 16px;
+  outline: none;
+  padding: 16px 0 2px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grey-5);
+}
+
+.input:focus:required:invalid {
+  box-shadow: none;
+  border-bottom: 2px solid red;
+}

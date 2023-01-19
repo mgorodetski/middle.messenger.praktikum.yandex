@@ -1,0 +1,27 @@
+---
+stylesheets:
+- ./styles/form.css
+- ../components/styles/input.css
+- ../components/styles/button.css
+---
+{{#extend "base"}}
+{{#content "main"}}
+<main>
+    <div class="container form__container">
+        <div>
+            <h2 class="form__header">Login</h2>
+        </div>
+        <form>
+            <fieldset>
+                {{> input type="text" name="login" placeholder="login"  required=true}}
+                {{> input type="password" name="password" placeholder="password" required=true}}
+            </fieldset>
+        </form>
+        <div class="form__buttons">
+            {{> button text="log in"}}
+            <a class="form__back-link" href="register.hbs">don't have an account?</a>
+        </div>
+    </div>
+</main>
+{{/content}}
+{{/extend}}

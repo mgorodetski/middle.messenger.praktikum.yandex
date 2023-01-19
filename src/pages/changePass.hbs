@@ -1,0 +1,31 @@
+---
+stylesheets:
+- ./styles/profile.css
+- ../components/styles/button.css
+- ./styles/form.css
+- ../components/styles/input.css
+---
+{{#extend "base"}}
+{{#content "main"}}
+<main>
+    <div class="profile__container">
+        <section class="change-avatar__out">
+            <div class="change-avatar__in">
+                <p class="change-avatar__text">change<br>avatar</p>
+            </div>
+        </section>
+        <form class="form__login">
+            {{> input type="password" name="password" placeholder=" oldPassword" required=true}}
+            {{> input type="password" name="password" placeholder="newPassword" required=true}}
+            {{> input type="password" name="password_confirm" placeholder="confirm_new_password" required=true}}
+
+            <div class="form__buttons">
+                {{> button text="save"}}
+            </div>
+        </form>
+    </div>
+    </div>
+</main>
+
+{{/content}}
+{{/extend}}
